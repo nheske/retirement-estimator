@@ -20,7 +20,7 @@ def default_input(prompt, default=None):
 
 values = read_to_list("3_mo_TBill_rate_1926-2013_pct.txt")
 print(len(values))
-print("\nNothe: Input data should be in percent, not decimal!\n")
+print("\nNote: Input data should be in percent, not decimal!\n")
 try:
     bonds = read_to_list('10-yr_TBond_returns_1926-2013_pct.txt')
     stocks = read_to_list('SP500_returns_1926-2013_pct.txt')
@@ -39,32 +39,41 @@ print("sbc_blend = 40% SP500/50% TBond/10% Cash\n")
 
 print("Press ENTER to take default value shown in [brackets]. \n")
 
-invest_type = default_input("Enter investment type: (stocks, bonds, sb_blend,  sbc_blend): \n", 'bonds').lower()
+invest_type = default_input("Enter investment type: ( 1. stocks (default), 2. bonds, 3. sb_blend,  4. sbc_blend): \n", 'stocks').lower()
 while invest_type not in investment_type_args:
-    invest_type = input("Invalid investment. Enter investment type " \
+    if invest_type == '1':
+      invest_type = 'stocks'
+    elif invest_type == '2':
+      invest_type = 'bonds' 
+    elif invest_type == '3':
+      invest_type = 'sb_blend'    
+    elif invest_type == '4':
+      invest_type = 'sbc_blend'    
+    else:
+      invest_type = input("Invalid investment. Enter investment type " \
                         "as listed in prompt: ")
-
-start_value = default_input("Input starting value of investments: \n", '2000000')
+print(invest_type + " chosen")
+start_value = default_input("Input starting value of investments: 2000000 is default\n", '2000000')
 while not start_value.isdigit():
     start_value = input("Invalid input! Input integer only: ")
 
-withdrawal = default_input("Input annual pre-tax withdrawal  (today's $): \n", '80000')
+withdrawal = default_input("Input annual pre-tax withdrawal  (today's $. $80000 is default): \n", '80000')
 while not withdrawal.isdigit():
     withdrawal = input("Invalid input! Input integer only: ")
-min_years = default_input("Input minimum years in retirement: \n", '18')
+min_years = default_input("Input minimum years in retirement (18 is default): \n", '18')
 while not min_years.isdigit():
     min_years = input("Invalid input! Input integer only: ")
 
-most_likely_years = default_input("Input most-likely years in retirement: \n",
+most_likely_years = default_input("Input most-likely years in retirement (25 is default): \n",
                                   '25')
 while not most_likely_years.isdigit():
     most_likely_years = input("Invalid input! Input integer only: ")
 
-max_years = default_input("Input maximum years in retirement: \n", '40')
+max_years = default_input("Input maximum years in retirement (40 is default): \n", '40')
 while not max_years.isdigit():
     max_years = input("Invalid input! Input integer only: ")
 
-num_cases = default_input("Input number of cases to run: \n", '50000')
+num_cases = default_input("Input number of cases to run (5000 is default): \n", '5000')
 while not num_cases.isdigit():
     num_cases = input("Invalid input! Input integer only: ")
 
@@ -112,6 +121,8 @@ def montecarlo(returns):
             bankrupt_count += 1
         else:
             outcome.append(investments)
+            if investments == max(i for i in outcome):
+              print("best outcome so far with $"+investments+"" in case: "+case_count)
         case_count += 1
     return outcome, bankrupt_count
 
