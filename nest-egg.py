@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def read_to_list(file_name):
     """Open a file of data in percent, convert to decimal and return a list"""
-    with open("data\\"+file_name) as in_file:
+    with open("data/"+file_name) as in_file:
         lines = [float(line.strip()) for line in in_file]
         decimal = [round(line/100,5) for line in lines]
         return decimal
@@ -66,9 +66,10 @@ while not max_years.isdigit():
 
 num_cases = default_input("Input number of cases to run: \n", '50000')
 while not num_cases.isdigit():
-    num_cases = input("Invalid input! Input integer only: "
+    num_cases = input("Invalid input! Input integer only: ")
 
-if not int(min_years) < int(most_likely_years) < int(max_years) or int(max_years) > 99:
+if not int(min_years) < int(most_likely_years) < int(max_years)  or int(max_years) > 99:
     print("\nProblem with input years.", file=sys.stderr)
-    print("Requires Min < ML < Max with M")
+    print("Requires Min < ML < Max & Max <= 99.", file=sys.stderr)
+    sys.exit(1)
 
