@@ -1,2 +1,3 @@
-language = "python3"
-run = "run=\"python nest-egg.py\" language=\"python3\" onBoot=\"\"python nest-egg.py\""
+run="python nest-egg.py"
+language="python3"
+onBoot="echo Booting up!"
