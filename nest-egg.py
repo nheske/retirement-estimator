@@ -73,3 +73,88 @@ if not int(min_years) < int(most_likely_years) < int(max_years)  or int(max_year
     print("Requires Min < ML < Max & Max <= 99.", file=sys.stderr)
     sys.exit(1)
 
+def montecarlo(returns):
+    case_count = 0
+    bankrupt_count = 0
+    outcome = []
+
+    while case_count < int(num_cases):
+        investments = int(start_value)
+        start_year = random.randrange(0, len(returns))
+        duration = int(random.triangular(int(min_years), int(max_years, int(most_likely_years))))
+        end_year = start_year + duration
+        lifespan = [i for i in range(start_year, end_year)]
+        bankrupt = 'no'
+
+        #build temporary lists for each case
+        lifespan_returns = []
+        lifespan_infl = []
+        for i in lifespan:
+            lifespan_returns.append(returns[i % len(returns)])
+            lifespan_infl.append(infl_rate[i % len(infl_rate)])
+
+        # loop through each year of retirement for each case run
+        for index, i in enumerate(lifespan_returns):
+            infl = lifespan_infl[index]
+
+            # don't adjust for inflation first year
+            if index == 0:
+                withdraw_infl_adj = int(withdrawal)
+            else:
+                withdraw_infl_adj = int(withdraw_infl_adj * (1 + infl))
+            investments -= withdraw_infl_adj
+            investments = int(investments * (1 + i))
+            if investments <= 0:
+                bankrupt = 'yes'
+                break
+        if bankrupt == 'yes':
+            outcome.append(0)
+            bankrupt_count += 1
+        else:
+            outcome.append(investments)
+        case_count += 1
+    return outcome, bankrupt_count
+
+def bankrupt_prob(outcome, bankrupt_count):
+    """Calculate and return chance of running out of money & other stats."""
+    total = len(outcome)
+    odds = round(100 * bankrupt_count / total, 1)
+
+    print("\nInvestment type: {}".format(invest_type))
+    print("Starting value: ${:,}".format(int(start_value)))
+    print("Annual withdrawal: ${:,}".format(int(withdrawal)))
+    print("Years in retirement (min-ml-max): {}-{}-{}"
+          .format(min_years, most_likely_years, max_years))
+    print("Number of runs: {:,}\n".format(len(outcome)))
+    print("Odds of running out of money: {}%\n".format(odds))
+    print("Average outcome: ${:,}".format(int(sum(outcome) / total)))
+    print("Minimum outcome: ${:,}".format(min(i for i in outcome)))
+    print("Maximum outcome: ${:,}".format(max(i for i in outcome)))
+
+    return odds
+
+def main():
+    """ Call MCS and bankrupt functions and draw bar chart of results."""
+    outcome, bankrupt_count = montecarlo(investment_type_args[invest_type])
+    odds = bankrupt_prob(outcome, bankrupt_count)
+
+    # generate matplotlib bar chart
+    plotdata = outcome[:3000]  # only plot first 3000 runs
+    plt.figure('Outcome by Case (showing first {} runs)'.format(len(plotdata)),
+               figsize=(16, 5))  # size is width, height in inches
+    index = [i + 1 for i in range(len(plotdata))]
+    plt.bar(index, plotdata, color='black')
+    plt.xlabel('Simulated Lives', fontsize=18)
+    plt.ylabel('$ Remaining', fontsize=18)
+    plt.ticklabel_format(style='plain', axis='y')
+    ax = plt.gca()
+    ax.get_yaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}"
+                                                         .format(int(x))))
+    plt.title('Probability of running out of money = {}%'.format(odds),
+              fontsize=20, color='red')
+    plt.show()
+
+
+# run program
+if __name__ == '__main__':
+    main()
