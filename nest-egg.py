@@ -46,7 +46,7 @@ if auto:
     min_years = 10
     most_likely_years = 20
     max_years = 35
-    total_runs = 5000
+    total_runs = 50000
 else:
     invest_type = default_input("Enter investment number 1. SP500 stocks , 2. 10-yr Treasury Bond, 3. 50% SP500/50% TBond,  4. 40% SP500/50% TBond/10% Cash (default): \n", '4').lower()
     while invest_type not in investment_type_args:

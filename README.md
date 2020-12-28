@@ -23,6 +23,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 - Introduce
   - explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk
 
+Methods
 *Vanguard formula*
 So, I dug through Vanguard's code.
 
