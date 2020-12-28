@@ -1,5 +1,8 @@
 # retirement-estimator
-based on the book Impractical Python Projects chapter 12: Net Egg Calculator
+Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
+
+Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
+Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
 
 TODOs
 - TODO calculate annualized returns
@@ -14,6 +17,7 @@ TODOs
 - S&P returns 
 -- https://www.slickcharts.com/sp500/returns
 - OOP
+- explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk
 
 *Vanguard formula*
 So, I dug through Vanguard's code.
