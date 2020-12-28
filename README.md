@@ -15,3 +15,20 @@ TODOs
 -- https://www.slickcharts.com/sp500/returns
 - OOP
 
+*Vanguard formula*
+So, I dug through Vanguard's code.
+
+Their simulation is driven by 90 years of historical actual returns data. The actual config file used by the simulation is here.
+
+Here's a brief explanation of their code:
+
+For each year (do this N times, where N is the # years chosen):
+- Pick a random year from the list of 90
+- Increase/Decrease expenses by CPI for that year, set the new expenses value
+- Withdraw the new expenses value from the balance
+- Factor in returns (weighted by fund allocation) from that year, and update the new balance
+- Repeat.
+
+This appears to be a basic, functional, Monte Carlo simulation.
+
+The reason it has more failures is because it's possible to get multiple 1931s in a row (-43% stocks), or some other combination of bad years in a streak (1931, 1973, 1974, 2000, 2008). They're not picking one starting year and moving forward, so there's no "cyclical nature" to their simulation. Two of those catastrophic years in a row will sink almost any FIRE plan.
