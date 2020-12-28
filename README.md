@@ -25,9 +25,10 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 
 Methods
 *Vanguard formula*
-So, I dug through Vanguard's code.
 
-Their simulation is driven by 90 years of historical actual returns data. The actual config file used by the simulation is here.
+According to [NewJobPFThrowaway on financialindependence Reddit](https://www.reddit.com/r/financialindependence/comments/d6wl6q/why_is_the_vanguard_retirement_nest_egg/)
+
+Vanguard's nest egg simulation is driven by 90 years of historical actual returns data. The actual config file used by the simulation is [here](https://retirementplans.vanguard.com//web/angular/app/nesteggcalculator/data/config.json).
 
 Here's a brief explanation of their code:
 
