@@ -17,8 +17,10 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   - Make graphs like vanguard
   - https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
   - https://python-graph-gallery.com/254-pandas-stacked-area-chart/
-- S&P returns 
--- https://www.slickcharts.com/sp500/returns
+- Potential Data Sorces S&P returns 
+    - Vanguard historical from their nest egg calculator
+    - S&P Returns from [Slick Charts](https://www.slickcharts.com/sp500/returns)
+    - Equity Labs backtest data(https://www.equitieslab.com/)
 - OOP
 - Introduce
   - explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk
@@ -42,3 +44,5 @@ For each year (do this N times, where N is the # years chosen):
 This appears to be a basic, functional, Monte Carlo simulation.
 
 The reason it has more failures is because it's possible to get multiple 1931s in a row (-43% stocks), or some other combination of bad years in a streak (1931, 1973, 1974, 2000, 2008). They're not picking one starting year and moving forward, so there's no "cyclical nature" to their simulation. Two of those catastrophic years in a row will sink almost any FIRE plan.
+
+

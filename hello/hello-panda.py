@@ -35,4 +35,9 @@ df = pd.read_csv(r'hello\data\cars.csv')
 df.sort_values(by=['Brand'], inplace=True)
 print (df)
 
+#JSON file into Pandas DataFrame
+# reading the file yields data {'year': 1926, 'stocks': 0.1163, 'bonds': 0.07...  {'year': 1927, 'stocks': 0.3744, 'bonds': 0.07... }
+data = pd.read_json(r'hello\data\sample.json')
 
+# displaying the DataFrame
+print(data.head(5))
