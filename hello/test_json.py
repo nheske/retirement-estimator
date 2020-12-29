@@ -1,3 +1,5 @@
+import json
+
 import pytest
 import pandas as pd
 import numpy as np
@@ -21,23 +23,26 @@ from Car import Car
 def test_read_json2():
     #list of lists to dataframe
     people_list_of_lists = [['Jon','Smith',21],['Mark','Brown',38],['Maria','Lee',42],['Jill','Jones',28],['Jack','Ford',55]]
-    dataframe_from_list_of_dictionaries = DataFrame(people_list_of_lists, columns=['First_Name','Last_Name','Age'])
-    print(dataframe_from_list_of_dictionaries)
+    dataframe_from_list_of_lists = DataFrame(people_list_of_lists, columns=['First_Name','Last_Name','Age'])
+    print(dataframe_from_list_of_lists)
 
     #list of dictionaries to dataframe
-    data = [{"a": 1, "b": 2},
-            {"a": 10, "b": 20}]
-    dataframe_from_list_of_dictionaries = pd.DataFrame(data, index=['ind1', 'ind2'])
+    list_of_dictionaries = [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]
+    dataframe_from_list_of_dictionaries = pd.DataFrame(list_of_dictionaries)
     print(dataframe_from_list_of_dictionaries)
 
-    datab = [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]
-    dataframe_from_list_of_dictionaries2 = pd.DataFrame(datab)
-    print(dataframe_from_list_of_dictionaries2)
+    # list of 1 dictionary (key = "data") of a list of 2 dictionaries
+    raw_data = [{"data": [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]}]
+    dict1 = raw_data[0]
+    historical_list_of_dicts = dict1["data"]
+    dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
+    print(dataframe_from_list_of_dictionaries3)
 
-    dict_of_list_of_dict = read_json('{"data": [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]}')
-    history = dict_of_list_of_dict['data']
-    df3 = pd.DataFrame(history, index=['ind1', 'ind2'])
-    print(df3)
+    with open('data/sample.json') as f:
+        raw_data_from_json_file = json.load(f)
+    historical_list_of_dicts = raw_data_from_json_file["data"]
+    dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
+    print(dataframe_from_list_of_dictionaries3)
 
     #     result = read_json({"data": [{"year": 1926,"stocks": 0.1163,"bonds": 0.0738,"cash": 0.032,"cpi": -0.0112},{"year": 1927,"stocks": 0.3744,"bonds": 0.0743,"cash": 0.031,"cpi": -0.0226}]}, lines=True)
 #     result = read_json({"data": [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]}, lines=True)

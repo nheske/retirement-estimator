@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 fruits = ['apples', 'bananas', 'grapefruit', 'cherry', 'blueberry', 'orange', 'lemon']
 df = pd.DataFrame(fruits)
@@ -28,16 +29,40 @@ print(df)
 
 cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'], 'Price': [22000,25000,27000,35000], 'Year': [2015,2013,2018,2018]}
 df = pd.DataFrame(cars, columns= ['Brand', 'Price', 'Year'])
-df.to_csv (r'hello\data\cars.csv', index = False, header=True)
+df.to_csv (r'data\cars.csv', index = False, header=True)
 print(df)
 print()
-df = pd.read_csv(r'hello\data\cars.csv')
+df = pd.read_csv(r'data/cars.csv')
 df.sort_values(by=['Brand'], inplace=True)
 print (df)
 
 #JSON file into Pandas DataFrame
 # reading the file yields data {'year': 1926, 'stocks': 0.1163, 'bonds': 0.07...  {'year': 1927, 'stocks': 0.3744, 'bonds': 0.07... }
-data = pd.read_json(r'hello\data\sample.json')
+data = pd.read_json(r'data/sample.json')
 
 # displaying the DataFrame
 print(data.head(5))
+
+# list of lists to dataframe
+people_list_of_lists = [['Jon', 'Smith', 21], ['Mark', 'Brown', 38], ['Maria', 'Lee', 42], ['Jill', 'Jones', 28],
+                        ['Jack', 'Ford', 55]]
+dataframe_from_list_of_lists = pd.DataFrame(people_list_of_lists, columns=['First_Name', 'Last_Name', 'Age'])
+print(dataframe_from_list_of_lists)
+
+# list of dictionaries to dataframe
+list_of_dictionaries = [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]
+dataframe_from_list_of_dictionaries = pd.DataFrame(list_of_dictionaries)
+print(dataframe_from_list_of_dictionaries)
+
+# list of 1 dictionary (key = "data") of a list of 2 dictionaries
+raw_data = [{"data": [{"year": 1926, "stocks": 0.1163}, {"year": 1927, "stocks": 0.3744}]}]
+dict1 = raw_data[0]
+historical_list_of_dicts = dict1["data"]
+dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
+print(dataframe_from_list_of_dictionaries3)
+
+with open('data/sample.json') as f:
+    raw_data_from_json_file = json.load(f)
+historical_list_of_dicts = raw_data_from_json_file["data"]
+dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
+print(dataframe_from_list_of_dictionaries3)
