@@ -9,6 +9,10 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
    - use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
 - https://www.cfiresim.com/
    - https://github.com/boknows/cFIREsim-open
+## Additional Tools
+- https://github.com/Gregable/social-security-tools
+
+
 ## TODOs
 - calculate annualized returns
   - https://www.buyupside.com/calculators/annualizedreturn.htm
