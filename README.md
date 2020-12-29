@@ -22,7 +22,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     - International High Dividend ETF VYMI yield is 4.3%. - from a portfolio of 1,000 companies.
     - tax disadvantage As an example, let's say the s&p 500 gets a 8% return (before inflation) from price growth and has a 2% dividend yield over that time for a 10% total return. Let's say you pay a 15% tax on the dividends, so your total return was 2*0.85 + 8 or 9.7%. Then let's say another person had a portfolio with a dividend yield of 3% but a growth rate of only 7%. Then that person would have a total return of 3*0.85+7 = 9.55%. Of course all that assumes you invest in a taxable account. If you're in a tax protected account (401k, IRA, etc...) then you still get the tax shield of those accounts
   - 100% stock Bogleheads portfolio (70% US domestic, 30% international index funds). 
-  - 
+  - portfolio rebalancing https://github.com/williamgilpin/portbalance
 - Graphs
   - Make graphs like vanguard
   - https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
