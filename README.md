@@ -11,8 +11,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
    - https://github.com/boknows/cFIREsim-open
 ## Additional Tools
 - https://github.com/Gregable/social-security-tools
-
-
+- SS Strategy https://github.com/MikePiper/open-social-security
 ## TODOs
 - calculate annualized returns
   - https://www.buyupside.com/calculators/annualizedreturn.htm
