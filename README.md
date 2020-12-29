@@ -6,7 +6,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 - Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
 - https://github.com/jhykes/retirement-mc
    - use Schiller CPI http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
-
+   - use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
 - 
 ## TODOs
 - calculate annualized returns
