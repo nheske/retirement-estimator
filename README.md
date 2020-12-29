@@ -7,7 +7,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 - https://github.com/jhykes/retirement-mc
    - use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
    - use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
-- 
+- https://www.cfiresim.com/
 ## TODOs
 - calculate annualized returns
   - https://www.buyupside.com/calculators/annualizedreturn.htm
