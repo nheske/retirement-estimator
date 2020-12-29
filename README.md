@@ -1,7 +1,7 @@
 # retirement-estimator
 Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
 
-## Methodology
+## Approaches to Modeling Future Outcomes
 - Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
 - Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
 - https://github.com/jhykes/retirement-mc
@@ -9,20 +9,25 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
    - use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
 - https://www.cfiresim.com/
    - https://github.com/boknows/cFIREsim-open
-## Additional Tools
-- https://github.com/Gregable/social-security-tools
-- SS Strategy https://github.com/MikePiper/open-social-security
 ## TODOs
-- calculate annualized returns
-  - https://www.buyupside.com/calculators/annualizedreturn.htm
-
-- Risk
+- OOP
+- Tests
+- Calculate annualized returns
+  - [buyupside annualized return calculator](https://www.buyupside.com/calculators/annualizedreturn.htm)
+- Graphs
+  - Make graphs like vanguard
+  - https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
+  - https://python-graph-gallery.com/254-pandas-stacked-area-chart/
+- Introduce
+  - explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk  
+## Other Considerations
+####  Risk
   - Sharpe Ratio
   - portfolio risk using variance and standard deviations 
   - https://codingandfun.com/portfolio-risk-and-returns-python/
   - apply Modern Portfolio Theory 
   - https://medium.com/analytics-vidhya/constructing-a-killer-investment-portfolio-with-python-51f4f0d344be
-- Strategies
+#### Investment Strategies
   - dividend investing
     - https://www.mrfreeat33.com/
     - Right now, Vanguard's High Dividend Yield index ETF VYM's trailing 4 quarters' dividends divided by its price = 3.1%. Current portfolio is 400 companies.
@@ -30,18 +35,20 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     - tax disadvantage As an example, let's say the s&p 500 gets a 8% return (before inflation) from price growth and has a 2% dividend yield over that time for a 10% total return. Let's say you pay a 15% tax on the dividends, so your total return was 2*0.85 + 8 or 9.7%. Then let's say another person had a portfolio with a dividend yield of 3% but a growth rate of only 7%. Then that person would have a total return of 3*0.85+7 = 9.55%. Of course all that assumes you invest in a taxable account. If you're in a tax protected account (401k, IRA, etc...) then you still get the tax shield of those accounts
   - 100% stock Bogleheads portfolio (70% US domestic, 30% international index funds). 
   - portfolio rebalancing https://github.com/williamgilpin/portbalance
-- Graphs
-  - Make graphs like vanguard
-  - https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
-  - https://python-graph-gallery.com/254-pandas-stacked-area-chart/
-- Potential Data Sorces S&P returns 
-    - Vanguard historical from their nest egg calculator
-    - S&P Returns from [Slick Charts](https://www.slickcharts.com/sp500/returns)
-    - Equity Labs backtest data(https://www.equitieslab.com/)
-- OOP
-- Introduce
-  - explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk
-
+- Candidate Historical Data Sources  
+    - S&P returns 
+        - Vanguard historical from their nest egg calculator
+        - S&P Returns from [Slick Charts](https://www.slickcharts.com/sp500/returns)
+        - Equity Labs backtest data(https://www.equitieslab.com/)
+    - [Robert Shiller/data](hhttp://www.econ.yale.edu/~shiller/data.htm)
+        - [US Home Prices 1890-Present](http://www.econ.yale.edu/~shiller/data.htm)
+    - [pages.stern.nyu.edu/~adamodar](http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html)
+    - [MoneyChimp CAGR history](http://www.moneychimp.com/features/market_cagr.htm)
+    - [Historical Inflation Rates: 1914-2020](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
+    - [Historical Annual U.S. Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
+#### Additional Tools
+- https://github.com/Gregable/social-security-tools
+- SS Strategy https://github.com/MikePiper/open-social-security
 Methods
 *Vanguard formula*
 
