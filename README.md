@@ -15,6 +15,13 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   - https://codingandfun.com/portfolio-risk-and-returns-python/
   - apply Modern Portfolio Theory 
   - https://medium.com/analytics-vidhya/constructing-a-killer-investment-portfolio-with-python-51f4f0d344be
+- Strategies
+  - dividend investing
+    - https://www.mrfreeat33.com/
+    - Right now, Vanguard's High Dividend Yield index ETF VYM's trailing 4 quarters' dividends divided by its price = 3.1%. Current portfolio is 400 companies.
+
+International High Dividend ETF VYMI yield is 4.3%. - from a portfolio of 1,000 companies.
+
 - Graphs
   - Make graphs like vanguard
   - https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
