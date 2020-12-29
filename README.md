@@ -7,6 +7,8 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 
 ## TODOs
 - calculate annualized returns
+  - https://www.buyupside.com/calculators/annualizedreturn.htm
+
 - Risk
   - Sharpe Ratio
   - portfolio risk using variance and standard deviations 
