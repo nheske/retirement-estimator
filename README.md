@@ -19,8 +19,8 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   - dividend investing
     - https://www.mrfreeat33.com/
     - Right now, Vanguard's High Dividend Yield index ETF VYM's trailing 4 quarters' dividends divided by its price = 3.1%. Current portfolio is 400 companies.
-
-International High Dividend ETF VYMI yield is 4.3%. - from a portfolio of 1,000 companies.
+    - International High Dividend ETF VYMI yield is 4.3%. - from a portfolio of 1,000 companies.
+    - tax disadvantage As an example, let's say the s&p 500 gets a 8% return (before inflation) from price growth and has a 2% dividend yield over that time for a 10% total return. Let's say you pay a 15% tax on the dividends, so your total return was 2*0.85 + 8 or 9.7%. Then let's say another person had a portfolio with a dividend yield of 3% but a growth rate of only 7%. Then that person would have a total return of 3*0.85+7 = 9.55%. Of course all that assumes you invest in a taxable account. If you're in a tax protected account (401k, IRA, etc...) then you still get the tax shield of those accounts
 
 - Graphs
   - Make graphs like vanguard
