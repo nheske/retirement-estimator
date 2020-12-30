@@ -7,8 +7,6 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 ## TODOs
 * OOP
 * Tests
-* Calculate annualized returns
-  * [buyupside annualized return calculator](https://www.buyupside.com/calculators/annualizedreturn.htm)
 * Graphs
   * Make graphs like vanguard
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
@@ -43,6 +41,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 * [retirement-mc (Python)](https://github.com/jhykes/retirement-mc) (Schiller for historical, CDC for life expectancy)
 * [SSA.gov retirement estimator](https://www.ssa.gov/benefits/retirement/estimator.html) | [US Social Security Calculator](https://ssa.tools/) | [source code](https://github.com/Gregable/social-security-tools)
 * [Social Security Strategy Calculator](https://opensocialsecurity.com/) | [open social security source code](https://github.com/MikePiper/open-social-security)
+* [buyupside annualized return calculator](https://www.buyupside.com/calculators/annualizedreturn.htm)
 
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
