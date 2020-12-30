@@ -9,6 +9,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
     * [cFIREsim](https://www.cfiresim.com/)
     * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
+* [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)     
 * https://github.com/jhykes/retirement-mc
    * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
    * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
@@ -38,6 +39,10 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   * apply Modern Portfolio Theory 
   * https://medium.com/analytics-vidhya/constructing-a-killer-investment-portfolio-with-python-51f4f0d344be
 #### Investment Strategies
+  * Lazy Portfolios: LC=US Large Cap, SC = US Small Cap, G = Global except US, USB = US Bond https://www.bogleheads.org/wiki/Lazy_portfolio
+   * Bogleheads Two fund portfolio 60%	Vanguard Total World Stock Index Fund/40%	Vanguard Total Bond Market Index Fund
+   * Scott Burns' Couch Potato portfolio / Andrew Tobias' Three Fund portfolio 33% Vanguard Inflation-Protected Securities Fund/34% Total US Stock/33% Total Int'l
+   * David Swensen's lazy portfolio Total Stock Mkt 30%/Intl Developed Mkt	15%/Emerging Markets	10%/Real Estate 15%/US Treasury Bonds	15%/TIPS	15%
   * dividend investing
     * https://www.mrfreeat33.com/
     * Right now, Vanguard's High Dividend Yield index ETF VYM's trailing 4 quarters' dividends divided by its price = 3.1%. Current portfolio is 400 companies.
