@@ -30,26 +30,31 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * Method 3: Forecast based on mean, volatility and correlations of portfolios assets
     * Method 4: Forecast based on expected return and volatility
 
-#### Calculators:     (note: FIRE = Financial Independence Retire Early)
-    * [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf)
+#### Some Online Calculators: 
+* [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf) Monte Carlo Simulation each year is randomly chosen from history with replacement.
+* (note: FIRE = Financial Independence Retire Early)
     * [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
-    * [firecalc]https://www.firecalc.com/)
+    * [firecalc](https://www.firecalc.com/)
     * [cFIREsim](https://www.cfiresim.com/)
     * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
     * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
-    * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
-    * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
-    * [retirement-mc (Python)](https://github.com/jhykes/retirement-mc) (Schiller for historical, CDC for life expectancy)
+* [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
+* [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
+* [retirement-mc (Python)](https://github.com/jhykes/retirement-mc) (Schiller for historical, CDC for life expectancy)
+* [SSA.gov retirement estimator](https://www.ssa.gov/benefits/retirement/estimator.html) | [US Social Security Calculator](https://ssa.tools/) | [source code](https://github.com/Gregable/social-security-tools)
+* [Social Security Strategy Calculator](https://opensocialsecurity.com/) | [open social security source code](https://github.com/MikePiper/open-social-security)
 
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
 * [fatFIRE subreddit](https://www.reddit.com/r/fatFIRE/)
+
 ####  Risk
   * Sharpe Ratio
   * portfolio risk using variance and standard deviations 
   * https://codingandfun.com/portfolio-risk-and-returns-python/
   * apply Modern Portfolio Theory 
   * https://medium.com/analytics-vidhya/constructing-a-killer-investment-portfolio-with-python-51f4f0d344be
+
 #### Investment Strategies
    * Lazy Portfolios:  https://www.bogleheads.org/wiki/Lazy_portfolio
       * Bogleheads Two fund portfolio 60%	Vanguard Total World Stock Index Fund/40%	Vanguard Total Bond Market Index Fund
@@ -61,25 +66,20 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * International High Dividend ETF VYMI yield is 4.3%. - from a portfolio of 1,000 companies.
     * tax disadvantage As an example, let's say the s&p 500 gets a 8% return (before inflation) from price growth and has a 2% dividend yield over that time for a 10% total return. Let's say you pay a 15% tax on the dividends, so your total return was 2*0.85 + 8 or 9.7%. Then let's say another person had a portfolio with a dividend yield of 3% but a growth rate of only 7%. Then that person would have a total return of 3*0.85+7 = 9.55%. Of course all that assumes you invest in a taxable account. If you're in a tax protected account (401k, IRA, etc...) then you still get the tax shield of those accounts 
   * portfolio rebalancing https://github.com/williamgilpin/portbalance
+
 #### Data Sources  
-    * S&P returns 
-        * Vanguard historical from their nest egg calculator
-        * S&P Returns from [Slick Charts](https://www.slickcharts.com/sp500/returns)
-        * Equity Labs backtest data(https://www.equitieslab.com/)
-        * [pages.stern.nyu.edu/~adamodar](http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html)
-    * [Robert Shiller/data](hhttp://www.econ.yale.edu/~shiller/data.htm)
-    * [Robert Shiller CPI, stock perform, int rates](http://www.econ.yale.edu/~shiller/data/chapt26.xlsx)
-    * [Robert Shiller US Home Prices 1890-Present](http://www.econ.yale.edu/~shiller/data.htm)
-    * [MoneyChimp Compound annual growth rate (CAGR) history](http://www.moneychimp.com/features/market_cagr.htm)
-    * [US Inflation Rates: 1914-2020](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
-    * [US Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
-    * [US CDC life expectancy] http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
-    * [ssa.gov retirement estimator)[https://www.ssa.gov/benefits/retirement/estimator.html]|[US Social Security Calculator](https://ssa.tools/)|[source code](https://github.com/Gregable/social-security-tools)
-    * [Social Security Strategy Calculator](https://opensocialsecurity.com/) | [open social security source code](https://github.com/MikePiper/open-social-security)
-#### Additional Tools
-
-
-
+* S&P returns 
+    * Vanguard historical from their nest egg calculator
+    * S&P Returns from [Slick Charts](https://www.slickcharts.com/sp500/returns)
+    * Equity Labs backtest data(https://www.equitieslab.com/)
+    * [pages.stern.nyu.edu/~adamodar](http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html)
+* [Robert Shiller/data](hhttp://www.econ.yale.edu/~shiller/data.htm)
+* [Robert Shiller CPI, stock perform, int rates](http://www.econ.yale.edu/~shiller/data/chapt26.xlsx)
+* [Robert Shiller US Home Prices 1890-Present](http://www.econ.yale.edu/~shiller/data.htm)
+* [MoneyChimp Compound annual growth rate (CAGR) history](http://www.moneychimp.com/features/market_cagr.htm)
+* [US Inflation Rates: 1914-2020](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
+* [US Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
+* [US CDC life expectancy](http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/)
 
 ##### Notes on Vanguard's tool/formula
 According to [NewJobPFThrowaway on financialindependence Reddit](https://www.reddit.com/r/financialindependence/comments/d6wl6q/why_is_the_vanguard_retirement_nest_egg/)
