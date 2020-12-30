@@ -15,8 +15,9 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
         * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
         * [cFIREsim](https://www.cfiresim.com/)
         * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
-    * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)     
-    * https://github.com/jhykes/retirement-mc
+    * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
+    * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
+    * [retirement-mc (Python)](https://github.com/jhykes/retirement-mc)
         * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
         * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
 
