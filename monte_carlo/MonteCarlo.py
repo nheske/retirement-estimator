@@ -1,5 +1,6 @@
 import random
 
+
 class MonteCarlo:
     name = "Monte Carlo Simulator"
     historicalData = [];
@@ -14,11 +15,6 @@ class MonteCarlo:
         print("bonds = " + str(inputs["bonds"]))
         print("cash = " + str(inputs["cash"]))
         print("total_trials = " + str(inputs["total_trials"]))
-
-if __name__ == '__main__':
-    input_values = {'years': 30, 'savings': 100000, 'withdrawalRate': 0.45, 'stocks': 0.5, 'bonds': 0.3, 'cash': 0.20, 'total_trials': 1000}
-    monteCarlo = MonteCarlo("sim", input_values)
-    print("I'm a MonteCarlo!")
 
 
 def initialize():
@@ -92,3 +88,7 @@ def monte_carlo(returns):
     return lifetime_final_assets, bankrupt_counter, earliest_bankruptcy
 
 
+if __name__ == '__main__':
+    input_values = {'years': 30, 'savings': 100000, 'withdrawalRate': 0.45, 'stocks': 0.5, 'bonds': 0.3, 'cash': 0.20, 'total_trials': 1000}
+    monteCarlo = MonteCarlo("sim", input_values)
+    print("I'm a MonteCarlo!")

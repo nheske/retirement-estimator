@@ -5,19 +5,28 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
    * matplotlib, pandas
    
 ## TODOs
-* OOP
-* Tests
+* input file csv
 * Graphs
-  * Make graphs like vanguard
+  * Make stacked graphs 
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
   * https://python-graph-gallery.com/254-pandas-stacked-area-chart/
   * Simulated portfolio performance plot https://www.portfoliovisualizer.com/examples#monteCarlo
-* Numpy
+* numpy
+* OOP
+* Tests
 * scipy
 * Introduce
   * explain at meetup https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/  5-7 minute lightning talks : http://pysd.io/talk  
 
-## Other Considerations
+
+
+
+
+
+
+
+
+
 
 ## Modeling Retirement With Monte Carlo Simulations
 * Forecast models: (e.g.  [simulation models described here](https://www.portfoliovisualizer.com/monte-carlo-simulation) )
