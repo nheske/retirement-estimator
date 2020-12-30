@@ -36,7 +36,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
     * [firecalc](https://www.firecalc.com/)
     * [cFIREsim](https://www.cfiresim.com/)
-    * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
+    * [When Can I Retire? Early Retirement Calculator / FIRE Calculator](https://engaging-data.com/fire-calculator/)
     * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
 * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
 * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
@@ -48,7 +48,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
 * [fatFIRE subreddit](https://www.reddit.com/r/fatFIRE/)
 
-####  Risk
+####  Risk (TODO)
   * Sharpe Ratio
   * portfolio risk using variance and standard deviations 
   * https://codingandfun.com/portfolio-risk-and-returns-python/
@@ -56,9 +56,9 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   * https://medium.com/analytics-vidhya/constructing-a-killer-investment-portfolio-with-python-51f4f0d344be
 
 #### Investment Strategies
-   * Lazy Portfolios:  https://www.bogleheads.org/wiki/Lazy_portfolio
-      * Bogleheads Two fund portfolio 60%	Vanguard Total World Stock Index Fund/40%	Vanguard Total Bond Market Index Fund
-      * Scott Burns' Couch Potato portfolio / Andrew Tobias' Three Fund portfolio 33% Vanguard Inflation-Protected Securities Fund/34% Total US Stock/33% Total Int'l
+   * [Lazy Vanguard Portfolios](https://www.bogleheads.org/wiki/Lazy_portfolios)
+      * Bogleheads Two fund portfolio 60%	[Total World Stock Index Fund VT](https://personal.vanguard.com/us/funds/snapshot?FundId=3141&FundIntExt=INT)/40%	[Total Bond Market Index Fund BND](https://personal.vanguard.com/us/funds/snapshot?FundId=0928&FundIntExt=INT)
+      * Scott Burns' Couch Potato portfolio / Andrew Tobias' Three Fund portfolio 33% [Inflation Protected VIPSX](https://personal.vanguard.com/us/funds/snapshot?FundId=0119&FundIntExt=INT)/34% [Total US Stock VTI](https://personal.vanguard.com/us/funds/snapshot?FundId=0970&FundIntExt=INT)/33% [Total Int'l VXUS](https://personal.vanguard.com/us/funds/snapshot?FundId=3369&FundIntExt=INT)
       * David Swensen's lazy portfolio Total Stock Mkt 30%/Intl Developed Mkt	15%/Emerging Markets	10%/Real Estate 15%/US Treasury Bonds	15%/TIPS	15%
   * dividend investing
     * https://www.mrfreeat33.com/
