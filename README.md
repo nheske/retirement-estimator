@@ -2,13 +2,16 @@
 Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
 
 ## Approaches to Modeling Future Outcomes
-- Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
-- Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
-- https://github.com/jhykes/retirement-mc
-   - use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
-   - use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
-- https://www.cfiresim.com/
-   - https://github.com/boknows/cFIREsim-open
+* Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
+* Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
+* FIRE(Financial independence Retirement Estimator)
+    * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
+    * [cFIREsim](https://www.cfiresim.com/)
+    * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
+* https://github.com/jhykes/retirement-mc
+   * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
+   * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
+
 
 ## Dependencies
    * matplotlib
