@@ -13,6 +13,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
   * Make graphs like vanguard
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
   * https://python-graph-gallery.com/254-pandas-stacked-area-chart/
+  * Simulated portfolio performance plot https://www.portfoliovisualizer.com/examples#monteCarlo
 * Numpy
 * scipy
 * Introduce
