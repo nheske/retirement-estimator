@@ -1,9 +1,10 @@
 # retirement-estimator
 Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
 
-## Approaches to Modeling Future Outcomes
+## Modeling Retirement With Monte Carlo Simulations
 * Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
 * Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
+* [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf)
 * FIRE(Financial independence Retirement Estimator)
     * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
     * [cFIREsim](https://www.cfiresim.com/)
@@ -14,8 +15,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 
 
 ## Dependencies
-   * matplotlib
-   * pandas
+   * matplotlib, pandas
    
 ## TODOs
 * OOP
