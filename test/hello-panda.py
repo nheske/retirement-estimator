@@ -13,7 +13,6 @@ class MyTestCase(unittest.TestCase):
         unittest.main()
 
 
-
 def test_data_frames():
     fruits = ['apples', 'bananas', 'grapefruit', 'cherry', 'blueberry', 'orange', 'lemon']
     df = pd.DataFrame(fruits)
@@ -38,22 +37,24 @@ def test_data_frames():
     df = pd.DataFrame(dict)
     print(df)
 
+
 def test_data_frames_csv():
     cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'], 'Price': [22000,25000,27000,35000], 'Year': [2015,2013,2018,2018]}
     df = pd.DataFrame(cars, columns= ['Brand', 'Price', 'Year'])
     df.to_csv (r'data\cars.csv', index = False, header=True)
     print(df)
     print()
-    df = pd.read_csv(r'data/cars.csv')
+    df = pd.read_csv(r'../hello/data/cars.csv')
     df.sort_values(by=['Brand'], inplace=True)
     print (df)
 
     #JSON file into Pandas DataFrame
     # reading the file yields data {'year': 1926, 'stocks': 0.1163, 'bonds': 0.07...  {'year': 1927, 'stocks': 0.3744, 'bonds': 0.07... }
-    data = pd.read_json(r'data/sample.json')
+    data = pd.read_json(r'../hello/data/sample.json')
 
     # displaying the DataFrame
     print(data.head(5))
+
 
 def test_data_frames_lists():
     # list of lists to dataframe
@@ -74,9 +75,10 @@ def test_data_frames_lists():
     dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
     print(dataframe_from_list_of_dictionaries3)
 
+
 def test_data_frames_json():
-    with open('data/sample.json') as f:
-        raw_data_from_json_file = json.load(f)
+    with open('../hello/data/sample.json') as file:
+        raw_data_from_json_file = json.load(file)
     historical_list_of_dicts = raw_data_from_json_file["data"]
     dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
     print(dataframe_from_list_of_dictionaries3)
