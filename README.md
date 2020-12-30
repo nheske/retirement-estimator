@@ -69,7 +69,8 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 #### Additional Tools
 * https://github.com/Gregable/social-security-tools
 * SS Strategy https://github.com/MikePiper/open-social-security
-
+* [FIRE on Reddit](https://www.reddit.com/r/financialindependence/)
+* [FatFIRE](https://www.reddit.com/r/fatFIRE/)
 
 
 ##### Notes on Vanguard's tool/formula
