@@ -2,18 +2,23 @@
 Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
 
 ## Modeling Retirement With Monte Carlo Simulations
-* Method 1: As used in book, from an 88 year of historical data, randomly choose a start year within the history and proceed through subsequent historical years.
-* Method 2: As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one lifetime could have 1931, 1931, 2001, 2008, 2008, 2001, etc. 
-* [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf)
-* FIRE(Financial independence Retirement Estimator)
-    * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
-    * [cFIREsim](https://www.cfiresim.com/)
-    * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
-* [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)     
-* https://github.com/jhykes/retirement-mc
-   * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
-   * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
-
+* Forecast models: (e.g.  [simulation models described here](https://www.portfoliovisualizer.com/monte-carlo-simulation) )
+    * Method 1: Forecast based on historical data
+        * As used in book, from 88 year historical data, randomly choose start year and process block of years with circular bootstrapping. No rebalancing. Historical inflation.
+        * As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one could theoretically have the bad luck of 1931, 1931, 2001, 2008, 2008, 2001, etc. 
+    * Method 2: Forecast based on mean and standard deviation of asset performance
+    * Method 3: Forecast based on mean, volatility and correlations of portfolios assets
+    * Method 4: Forecast based on expected return and volatility
+* Examples:    
+    * [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf)
+    * FIRE(Financial independence Retirement Estimator)
+        * [Engaging FIRE calculator](https://engaging-data.com/fire-calculator/)
+        * [cFIREsim](https://www.cfiresim.com/)
+        * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
+    * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)     
+    * https://github.com/jhykes/retirement-mc
+        * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
+        * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
 
 ## Dependencies
    * matplotlib, pandas
