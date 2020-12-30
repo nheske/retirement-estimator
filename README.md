@@ -29,6 +29,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * Method 2: Forecast based on mean and standard deviation of asset performance
     * Method 3: Forecast based on mean, volatility and correlations of portfolios assets
     * Method 4: Forecast based on expected return and volatility
+
 #### Calculators:     (note: FIRE = Financial Independence Retire Early)
     * [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf)
     * [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
@@ -39,8 +40,7 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
     * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
     * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
     * [retirement-mc (Python)](https://github.com/jhykes/retirement-mc) (Schiller for historical, CDC for life expectancy)
-        * use Schiller CPI, stock perform, int rates http://www.econ.yale.edu/~shiller/data/chapt26.xlsx
-        * use CDC life expectancy http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/
+
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
 * [fatFIRE subreddit](https://www.reddit.com/r/fatFIRE/)
