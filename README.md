@@ -80,7 +80,14 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 * [US Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
 * [US CDC life expectancy](http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/)
 
-##### Notes on Vanguard's tool/formula
+##### Miscellaneous Notes on 
+
+###### Annualized Return Formulas
+* when given the annual returns for each year of the investment period:
+   ar = ( ( (1+R1)*(1+R2)*(1+R3)...*(1+Rn) )(1/n) -1) * 100)
+* when given a dollar value of returns instead of an annual rate of returns
+   ar = ( (final value/initial value)^1/n - 1) ) where n = The number of years you wish to annualize
+###### Vanguard's tool/formula
 According to [NewJobPFThrowaway on financialindependence Reddit](https://www.reddit.com/r/financialindependence/comments/d6wl6q/why_is_the_vanguard_retirement_nest_egg/)
 
 >Vanguard's nest egg simulation is driven by 90 years of historical actual returns data. The actual config file used by the simulation is [here](https://retirementplans.vanguard.com//web/angular/app/nesteggcalculator/data/config.json).
