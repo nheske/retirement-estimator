@@ -58,6 +58,7 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
 * [fatFIRE subreddit](https://www.reddit.com/r/fatFIRE/)
+* [Early Retirement](https://www.early-retirement.org/forums/)
 
 ####  Risk (TODO)
   * Sharpe Ratio
