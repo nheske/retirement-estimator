@@ -2,14 +2,14 @@ import json
 import pandas as pd
 
 
-class JsonHistory:
+class JsonToDataFrame:
 
     def __init__(self, speed=0):
         self.isLoaded = False
         self.size = 0
 
     def load_dataframe_from_json(self, json_file):
-        with open('data/'+json_file) as f:
+        with open('../data/'+json_file) as f:
             raw_data_from_json_file = json.load(f)
         if isinstance(raw_data_from_json_file, dict):
             value = raw_data_from_json_file["data"]
@@ -29,7 +29,7 @@ class JsonHistory:
 
 
 if __name__ == '__main__':
-    json_history = JsonHistory()
+    json_history = JsonToDataFrame()
     print("I'm a json_history!")
     df = json_history.load_dataframe_from_json('nest-egg-vanguard-config.json')
     print(json_history.is_loaded())

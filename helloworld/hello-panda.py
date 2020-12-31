@@ -6,8 +6,6 @@ import unittest
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
 
     if __name__ == '__main__':
         unittest.main()
@@ -41,16 +39,16 @@ def test_data_frames():
 def test_data_frames_csv():
     cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'], 'Price': [22000,25000,27000,35000], 'Year': [2015,2013,2018,2018]}
     df = pd.DataFrame(cars, columns= ['Brand', 'Price', 'Year'])
-    df.to_csv (r'data\cars.csv', index = False, header=True)
+    df.to_csv (r'data/cars.csv', index = False, header=True)
     print(df)
     print()
-    df = pd.read_csv(r'../hello/data/cars.csv')
+    df = pd.read_csv(r'data/cars.csv')
     df.sort_values(by=['Brand'], inplace=True)
     print (df)
 
     #JSON file into Pandas DataFrame
     # reading the file yields data {'year': 1926, 'stocks': 0.1163, 'bonds': 0.07...  {'year': 1927, 'stocks': 0.3744, 'bonds': 0.07... }
-    data = pd.read_json(r'../hello/data/sample.json')
+    data = pd.read_json(r'data/sample.json')
 
     # displaying the DataFrame
     print(data.head(5))
@@ -77,7 +75,7 @@ def test_data_frames_lists():
 
 
 def test_data_frames_json():
-    with open('../hello/data/sample.json') as file:
+    with open('data/sample.json') as file:
         raw_data_from_json_file = json.load(file)
     historical_list_of_dicts = raw_data_from_json_file["data"]
     dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
