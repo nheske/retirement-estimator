@@ -1,5 +1,5 @@
 # retirement-estimator
-Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
+Inspired by and initially based on the Net Egg Calculator in Impractical Python Projects
 
 ## Dependencies
    * matplotlib, pandas
