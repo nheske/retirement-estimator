@@ -2,8 +2,9 @@ import unittest
 import helloworld.HelloWorld as HelloWorld
 import helloworld.hello as hello
 #https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure
+#python -m unittest helloworld.test_helloworld.HelloWorldTestCase.test_hello_world
 
-class MyTestCase2(unittest.TestCase):
+class HelloWorldTestCase(unittest.TestCase):
     def test_something(self):
         self.assertEqual(True, True)
 
