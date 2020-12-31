@@ -1,5 +1,5 @@
 # retirement-estimator
-Initially based on the book Impractical Python Projects chapter 12: Net Egg Calculator
+Inspired by and initially based on the Net Egg Calculator in Impractical Python Projects
 
 ## Dependencies
    * matplotlib, pandas
@@ -64,8 +64,8 @@ Initially based on the book Impractical Python Projects chapter 12: Net Egg Calc
 
 #### Investment Strategies
    * [Lazy Vanguard Portfolios](https://www.bogleheads.org/wiki/Lazy_portfolios)
-      * Bogleheads Two fund portfolio 60%	[Total World Stock Index Fund VT](https://personal.vanguard.com/us/funds/snapshot?FundId=3141&FundIntExt=INT)/40%	[Total Bond Market Index Fund BND](https://personal.vanguard.com/us/funds/snapshot?FundId=0928&FundIntExt=INT)
-      * Scott Burns' Couch Potato portfolio / Andrew Tobias' Three Fund portfolio 33% [Inflation Protected VIPSX](https://personal.vanguard.com/us/funds/snapshot?FundId=0119&FundIntExt=INT)/34% [Total US Stock VTI](https://personal.vanguard.com/us/funds/snapshot?FundId=0970&FundIntExt=INT)/33% [Total Int'l VXUS](https://personal.vanguard.com/us/funds/snapshot?FundId=3369&FundIntExt=INT)
+      * Bogleheads Two fund portfolio 60%	Total World Stock Index Fund [VT](https://personal.vanguard.com/us/funds/snapshot?FundId=3141&FundIntExt=INT)/40%	Total Bond Market Index Fund [BND](https://personal.vanguard.com/us/funds/snapshot?FundId=0928&FundIntExt=INT)
+      * Scott Burns' Couch Potato portfolio / Andrew Tobias' Three Fund portfolio 33% Inflation Protected [VIPSX](https://personal.vanguard.com/us/funds/snapshot?FundId=0119&FundIntExt=INT)/34% Total US Stock [VTI](https://personal.vanguard.com/us/funds/snapshot?FundId=0970&FundIntExt=INT)/33% Total Int'l [VXUS](https://personal.vanguard.com/us/funds/snapshot?FundId=3369&FundIntExt=INT)
       * David Swensen's lazy portfolio Total Stock Mkt 30%/Intl Developed Mkt	15%/Emerging Markets	10%/Real Estate 15%/US Treasury Bonds	15%/TIPS	15%
   * dividend investing
     * https://www.mrfreeat33.com/
