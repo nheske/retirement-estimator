@@ -37,9 +37,8 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
     * Method 3: Forecast based on mean, volatility and correlations of portfolios assets
     * Method 4: Forecast based on expected return and volatility
 
-#### Some Online Calculators: 
-##### Monte Carlo Simulations
-*[Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf) Monte Carlo Simulation each year is randomly chosen from history with replacement.
+##### Online Monte Carlo Simulations
+* [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf) Monte Carlo Simulation each year is randomly chosen from history with replacement.
 * (note: FIRE = Financial Independence Retire Early)
     * [firecalc (PHP)](https://www.firecalc.com/)
     * [cFIREsim](https://www.cfiresim.com/)
@@ -48,7 +47,7 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 * [Otar Retirement Calculator (Excel)](http://retirementoptimizer.com/Trial/ORCtrial.htm)    
 * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
 * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
-##### Other
+##### Other Calculators
 * [Bogleheads Retiree Portfolio Model (Excel)](https://www.bogleheads.org/wiki/Retiree_Portfolio_Model)
 * [When Can I Retire? Early Retirement Calculator / FIRE Calculator](https://engaging-data.com/fire-calculator/)
 * [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
