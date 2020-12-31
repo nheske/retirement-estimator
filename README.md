@@ -96,6 +96,7 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 ##### Miscellaneous Notes
 * [Determining Withdrawal Rates Using Historical Data by William P. Bengen](https://www.retailinvestor.org/pdf/Bengen1.pdf)
 * [The Retirement Calculator from Hell](http://www.efficientfrontier.com/ef/998/hell.htm)
+* [Trinity study (also called "the 4 percent rule")](https://en.m.wikipedia.org/wiki/Trinity_study)
 
 
 ###### Annualized Return Formulas
