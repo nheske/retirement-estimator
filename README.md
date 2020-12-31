@@ -6,6 +6,8 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
    
 ## TODOs
 * input file csv
+* Aggregate historical data into master spreadsheet
+
 * Graphs
   * Make stacked graphs 
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
