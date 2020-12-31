@@ -7,6 +7,7 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 ## TODOs
 * input file csv
 * Aggregate historical data into master spreadsheet
+* Plot distributions 1 yr, 2 yr, 3 yr https://klementoninvesting.substack.com/p/the-distribution-of-stock-market
 
 * Graphs
   * Make stacked graphs 
