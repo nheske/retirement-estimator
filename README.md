@@ -32,25 +32,29 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 * Forecast models: (e.g.  [simulation models described here](https://www.portfoliovisualizer.com/monte-carlo-simulation) )
     * Method 1: Forecast based on historical data
         * As used in book, from 88 year historical data, randomly choose start year and process block of years with circular bootstrapping. No rebalancing. Historical inflation.
-        * As used by Vanguard's Nest Egg calculator, each year is randomly chosen with replacement. So, one could theoretically have the bad luck of 1931, 1931, 2001, 2008, 2008, 2001, etc. 
+        * As used by Vanguard's Nest Egg calculator, each year is a random sample with replacement. So, one could theoretically have the bad luck of 1931, 1931, 2001, 2008, 2008, 2001, etc. 
     * Method 2: Forecast based on mean and standard deviation of asset performance
     * Method 3: Forecast based on mean, volatility and correlations of portfolios assets
     * Method 4: Forecast based on expected return and volatility
 
 #### Some Online Calculators: 
-* [Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf) Monte Carlo Simulation each year is randomly chosen from history with replacement.
+##### Monte Carlo Simulations
+*[Vanguard's Nest Egg Calculator](https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf) Monte Carlo Simulation each year is randomly chosen from history with replacement.
 * (note: FIRE = Financial Independence Retire Early)
-    * [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
-    * [firecalc](https://www.firecalc.com/)
+    * [firecalc (PHP)](https://www.firecalc.com/)
     * [cFIREsim](https://www.cfiresim.com/)
-    * [When Can I Retire? Early Retirement Calculator / FIRE Calculator](https://engaging-data.com/fire-calculator/)
     * [cFIREsim-open source](https://github.com/boknows/cFIREsim-open)
+* [retirementsimulation.com (Javascript)](https://www.retirementsimulation.com/) (historical S&P random sample with replacement)
+* [Otar Retirement Calculator (Excel)](http://retirementoptimizer.com/Trial/ORCtrial.htm)    
 * [Portfolio Visualizer](https://www.portfoliovisualizer.com/monte-carlo-simulation)
 * [The Flexible Retirement Planner (Java)](https://www.flexibleretirementplanner.com/wp/)
+##### Other
+* [Bogleheads Retiree Portfolio Model (Excel)](https://www.bogleheads.org/wiki/Retiree_Portfolio_Model)
+* [When Can I Retire? Early Retirement Calculator / FIRE Calculator](https://engaging-data.com/fire-calculator/)
+* [Networthify](https://networthify.com/calculator/earlyretirement?income=50000&initialBalance=0&expenses=20000&annualPct=5&withdrawalRate=4)
 * [SSA.gov retirement estimator](https://www.ssa.gov/benefits/retirement/estimator.html) | [US Social Security Calculator](https://ssa.tools/) | [source code](https://github.com/Gregable/social-security-tools)
 * [Social Security Strategy Calculator](https://opensocialsecurity.com/) | [open social security source code](https://github.com/MikePiper/open-social-security)
 * [buyupside annualized return calculator](https://www.buyupside.com/calculators/annualizedreturn.htm)
-* https://www.retirementsimulation.com/
 
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
@@ -89,7 +93,10 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 * [US Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
 * [US CDC life expectancy](http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/)
 
-##### Miscellaneous Notes on 
+##### Miscellaneous Notes
+* [Determining Withdrawal Rates Using Historical Data by William P. Bengen](https://www.retailinvestor.org/pdf/Bengen1.pdf)
+* [The Retirement Calculator from Hell](http://www.efficientfrontier.com/ef/998/hell.htm)
+
 
 ###### Annualized Return Formulas
 * when given the annual returns for each year of the investment period:
