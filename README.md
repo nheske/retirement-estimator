@@ -96,10 +96,11 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 * [US Inflation Rate from 1913 to the present](https://inflationdata.com/Inflation/Inflation_Rate/HistoricalInflation.aspx)
 * [US CDC life expectancy](http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/)
 
-##### Miscellaneous Notes
+##### Notable Academic Papers
 * [Determining Withdrawal Rates Using Historical Data by William P. Bengen](https://www.retailinvestor.org/pdf/Bengen1.pdf)
 * [The Retirement Calculator from Hell](http://www.efficientfrontier.com/ef/998/hell.htm)
 * [Trinity study (also called "the 4 percent rule")](https://en.m.wikipedia.org/wiki/Trinity_study)
+* [Portfolio Theory, Life-Cycle Investing, and Retirement Income](https://www.ssa.gov/policy/docs/policybriefs/pb2007-02.html)
 
 
 ###### Annualized Return Formulas
