@@ -102,6 +102,8 @@ Inspired by and initially based on the Net Egg Calculator in Impractical Python 
 * [Trinity study (also called "the 4 percent rule")](https://en.m.wikipedia.org/wiki/Trinity_study)
 * [Portfolio Theory, Life-Cycle Investing, and Retirement Income](https://www.ssa.gov/policy/docs/policybriefs/pb2007-02.html)
 
+##### Miscellaneous Links
+* [DMOZ Retirement Planning](https://dmoz-odp.org/Business/Investing/Retirement_Planning/)
 
 ###### Annualized Return Formulas
 * when given the annual returns for each year of the investment period:
