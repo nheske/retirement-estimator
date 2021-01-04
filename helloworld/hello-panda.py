@@ -79,6 +79,7 @@ def test_data_frames_json():
         raw_data_from_json_file = json.load(file)
     historical_list_of_dicts = raw_data_from_json_file["data"]
     dataframe_from_list_of_dictionaries3 = pd.DataFrame(historical_list_of_dicts)
+    dataframe_from_list_of_dictionaries3.to_csv(r'data/historical.csv', index=False, header=True)
     print(dataframe_from_list_of_dictionaries3)
 
 
@@ -87,3 +88,10 @@ def test_read_jsonl():
     expected = pd.DataFrame([[1, 2], [1, 2]], columns=['a', 'b'])
     assert_frame_equal(result, expected)
 
+
+def test_json_to_df_to_csv():
+    cars = {'Brand': ['Honda Civic', 'Toyota Corolla', 'Ford Focus', 'Audi A4'],
+            'Price': [22000, 25000, 27000, 35000]}
+    df = pd.DataFrame(cars, columns=['Brand', 'Price'])
+    df.to_csv(r'data/cars.csv', index=False, header=True)
+    print(df)
