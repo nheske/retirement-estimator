@@ -19,6 +19,7 @@ Inspired by and initially based on the retirement Calculator in Impractical Pyth
 * Tests
 * scipy
 * Tensorflow machine learning
+* http://blog.streeteye.com/blog/2016/08/safe-retirement-spending-using-certainty-equivalent-cash-flow-and-tensorflow/
 * Introduce
   * explain at a [meetup](https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/) | [5-7 minute lightning talks](http://pysd.io/talk)  
 
