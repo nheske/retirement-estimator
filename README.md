@@ -18,8 +18,9 @@ Inspired by and initially based on the retirement Calculator in Impractical Pyth
 * OOP
 * Tests
 * scipy
+* Tensorflow machine learning
 * Introduce
-  * explain at [meetup](https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/) | [5-7 minute lightning talks](http://pysd.io/talk)  
+  * explain at a [meetup](https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/) | [5-7 minute lightning talks](http://pysd.io/talk)  
 
 
 
