@@ -11,6 +11,7 @@ Inspired by and initially based on the retirement Calculator in Impractical Pyth
 
 * Graphs
   * https://olgabot.github.io/prettyplotlib/
+https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quickstart
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
   * https://python-graph-gallery.com/254-pandas-stacked-area-chart/
   * Simulated portfolio performance plot https://www.portfoliovisualizer.com/examples#monteCarlo
