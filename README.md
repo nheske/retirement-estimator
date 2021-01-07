@@ -10,7 +10,7 @@ Inspired by and initially based on the retirement Calculator in Impractical Pyth
 * Plot distributions 1 yr, 2 yr, 3 yr https://klementoninvesting.substack.com/p/the-distribution-of-stock-market
 
 * Graphs
-  * Make stacked graphs 
+  * https://olgabot.github.io/prettyplotlib/
   * https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf
   * https://python-graph-gallery.com/254-pandas-stacked-area-chart/
   * Simulated portfolio performance plot https://www.portfoliovisualizer.com/examples#monteCarlo
