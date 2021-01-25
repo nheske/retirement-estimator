@@ -178,10 +178,16 @@ def simulate(MONTE_CARLO):
     #for i in range(1, MONTE_CARLO.MAX_YEARS + 1):
         results[7].append(round(trials[some_year][index]))
 
-    mean_final_outcome = statistics.mean(trials[MONTE_CARLO.inputs.years-1])
-    std_dev_final_outcome = statistics.stdev(trials[MONTE_CARLO.inputs.years-1])
-    worst_outcome = np.min(trials[MONTE_CARLO.inputs.years-1])
-    best_outcome = np.max(trials[MONTE_CARLO.inputs.years-1])
+    final_outcomes = trials[MONTE_CARLO.inputs.years - 1]
+    mean_final_outcome = statistics.mean(final_outcomes)
+    std_dev_final_outcome = statistics.stdev(final_outcomes)
+    worst_outcome = np.min(final_outcomes)
+    best_outcome = np.max(final_outcomes)
+    p100 = np.percentile(final_outcomes, 10, interpolation='nearest')
+    p250 = np.percentile(final_outcomes, 25, interpolation='nearest')
+    median_outcome = np.median(final_outcomes)
+    p750 = np.percentile(final_outcomes, 75, interpolation='nearest')
+    p900 = np.percentile(final_outcomes, 90, interpolation='nearest')
 
     print("Monte Carlo results")
 #    print("size of trials list =      " + str(len(trials)))     #num_years
@@ -206,11 +212,11 @@ def simulate(MONTE_CARLO):
     # strn += "Median final outcome:" + _format_currency(self.median_final_outcome) + "\n"
     # # strn += "  MAD:       " + _format_currency(astropy.stats.median_absolute_deviation(self.values)) + "\n"
     strn += "Worst outcome:      " + _format_currency(worst_outcome) + "\n"
-    # strn += "10% outcome:        " + _format_currency(self.p100) + "\n"
-    # strn += "25% outcome:        " + _format_currency(self.p250) + "\n"
-    # strn += "Median outcome:     " + _format_currency(self.median_outcome) + "\n"
-    # strn += "75% outcome:        " + _format_currency(self.p750) + "\n"
-    # strn += "90% outcome:        " + _format_currency(self.p900) + "\n"
+    strn += "10% outcome:        " + _format_currency(p100) + "\n"
+    strn += "25% outcome:        " + _format_currency(p250) + "\n"
+    strn += "Median outcome:     " + _format_currency(median_outcome) + "\n"
+    strn += "75% outcome:        " + _format_currency(p750) + "\n"
+    strn += "90% outcome:        " + _format_currency(p900) + "\n"
     strn += "Best outcome:       " + _format_currency(best_outcome) + "\n"
 
     print(strn)
