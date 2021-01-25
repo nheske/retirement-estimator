@@ -180,6 +180,9 @@ def simulate(MONTE_CARLO):
 
     mean_final_outcome = statistics.mean(trials[MONTE_CARLO.inputs.years-1])
     std_dev_final_outcome = statistics.stdev(trials[MONTE_CARLO.inputs.years-1])
+    worst_outcome = np.min(trials[MONTE_CARLO.inputs.years-1])
+    best_outcome = np.max(trials[MONTE_CARLO.inputs.years-1])
+
     print("Monte Carlo results")
 #    print("size of trials list =      " + str(len(trials)))     #num_years
 #    print("size of trials[i] list:    " + str(len(trials[0])))  #num_trials
@@ -202,13 +205,13 @@ def simulate(MONTE_CARLO):
     # strn += "\n"
     # strn += "Median final outcome:" + _format_currency(self.median_final_outcome) + "\n"
     # # strn += "  MAD:       " + _format_currency(astropy.stats.median_absolute_deviation(self.values)) + "\n"
-    # strn += "Worst outcome:      " + _format_currency(self.worst_outcome) + "\n"
+    strn += "Worst outcome:      " + _format_currency(worst_outcome) + "\n"
     # strn += "10% outcome:        " + _format_currency(self.p100) + "\n"
     # strn += "25% outcome:        " + _format_currency(self.p250) + "\n"
     # strn += "Median outcome:     " + _format_currency(self.median_outcome) + "\n"
     # strn += "75% outcome:        " + _format_currency(self.p750) + "\n"
     # strn += "90% outcome:        " + _format_currency(self.p900) + "\n"
-    # strn += "Best outcome:       " + _format_currency(self.best_outcome) + "\n"
+    strn += "Best outcome:       " + _format_currency(best_outcome) + "\n"
 
     print(strn)
 
