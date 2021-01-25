@@ -141,7 +141,8 @@ def simulate(MONTE_CARLO):
                 probabilities[some_year-1] += 1
             # add a small amount of randomness; otherwise, the quickSort will cause recursion errors
             trials[some_year-1].append(balance + random.random() / 100)
-    i100 = round(MONTE_CARLO.TOTAL_TRIALS);
+
+    i100 = round(MONTE_CARLO.TOTAL_TRIALS)
     i975 = round(MONTE_CARLO.TOTAL_TRIALS * 0.975);
     i875 = round(MONTE_CARLO.TOTAL_TRIALS * 0.875);
     i750 = round(MONTE_CARLO.TOTAL_TRIALS * 0.75);
@@ -177,7 +178,8 @@ def simulate(MONTE_CARLO):
     #for i in range(1, MONTE_CARLO.MAX_YEARS + 1):
         results[7].append(round(trials[some_year][index]))
 
-    #    mean_outcome = statistics.mean(self.final_outcomes)
+    mean_final_outcome = statistics.mean(trials[MONTE_CARLO.inputs.years-1])
+    std_dev_final_outcome = statistics.stdev(trials[MONTE_CARLO.inputs.years-1])
     print("Monte Carlo results")
 #    print("size of trials list =      " + str(len(trials)))     #num_years
 #    print("size of trials[i] list:    " + str(len(trials[0])))  #num_trials
@@ -190,24 +192,25 @@ def simulate(MONTE_CARLO):
     strn += "Num runs:           " + str(MONTE_CARLO.TOTAL_TRIALS) + "\n"
     strn += "Calculation Time:   " + str((time.time() - start)) + "\n"
     strn += "\n"
-    strn += "Mean outcome:       " + _format_currency(mean_outcome) + "\n"
-    strn += "Std Dev:            " + _format_currency(std_dev_outcome) + "\n"
+    strn += "Mean outcome:       " + _format_currency(mean_final_outcome) + "\n"
+    strn += "Std Dev:            " + _format_currency(std_dev_final_outcome) + "\n"
     strn += "Avg rate of return: " + _format_percentage(averageRateOfReturn) + "\n"
     strn += "68–95–99.7 rule \n"
-    strn += "1 sigma runs        " + _format_percentage(one_sigma) + "\n"
-    strn += "2 sigma runs        " + _format_percentage(two_sigma) + "\n"
-    strn += "3 sigma runs        " + _format_percentage(three_sigma) + "\n"
-    strn += "\n"
-    strn += "Median final outcome:" + _format_currency(self.median_final_outcome) + "\n"
-    # strn += "  MAD:       " + _format_currency(astropy.stats.median_absolute_deviation(self.values)) + "\n"
-    strn += "Worst outcome:      " + _format_currency(self.worst_outcome) + "\n"
-    strn += "10% outcome:        " + _format_currency(self.p100) + "\n"
-    strn += "25% outcome:        " + _format_currency(self.p250) + "\n"
-    strn += "Median outcome:     " + _format_currency(self.median_outcome) + "\n"
-    strn += "75% outcome:        " + _format_currency(self.p750) + "\n"
-    strn += "90% outcome:        " + _format_currency(self.p900) + "\n"
-    strn += "Best outcome:       " + _format_currency(self.best_outcome) + "\n"
+    # strn += "1 sigma runs        " + _format_percentage(one_sigma) + "\n"
+    # strn += "2 sigma runs        " + _format_percentage(two_sigma) + "\n"
+    # strn += "3 sigma runs        " + _format_percentage(three_sigma) + "\n"
+    # strn += "\n"
+    # strn += "Median final outcome:" + _format_currency(self.median_final_outcome) + "\n"
+    # # strn += "  MAD:       " + _format_currency(astropy.stats.median_absolute_deviation(self.values)) + "\n"
+    # strn += "Worst outcome:      " + _format_currency(self.worst_outcome) + "\n"
+    # strn += "10% outcome:        " + _format_currency(self.p100) + "\n"
+    # strn += "25% outcome:        " + _format_currency(self.p250) + "\n"
+    # strn += "Median outcome:     " + _format_currency(self.median_outcome) + "\n"
+    # strn += "75% outcome:        " + _format_currency(self.p750) + "\n"
+    # strn += "90% outcome:        " + _format_currency(self.p900) + "\n"
+    # strn += "Best outcome:       " + _format_currency(self.best_outcome) + "\n"
 
+    print(strn)
 
 
 
@@ -300,7 +303,7 @@ def simulate(MONTE_CARLO):
 
 if __name__ == '__main__':
     input_values = {'years': 5, 'savings': 1000000, 'withdrawalRate': 0.0, 'stocks': 1.00, 'bonds': 0.0, 'cash': 0.0}
-    MONTE_CARLO = MonteCarloSim(input_values, num_trials=10)
+    MONTE_CARLO = MonteCarloSim(input_values, num_trials=100)
     simulate(MONTE_CARLO)
     # print("I'm a MonteCarloSim!")
     # MONTE_CARLO = MonteCarloSim()
