@@ -26,11 +26,11 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 
 
 * Run multiple types of sims
-** Mu, sigma
-** Historical series
-** Historical year without replacement
-** Historical year with replacement
-** Log normal
+* Mu, sigma e.g. Stocker
+* Historical series e.g. _mc.py
+* Historical year without replacement e.g. vanguard
+* Historical year with replacement 
+* Log normal 
 
 
 
