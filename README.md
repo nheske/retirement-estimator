@@ -25,4 +25,13 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
   * explain at a [meetup](https://www.meetup.com/pythonsd/events/wxfkzrybcqbgc/) | [5-7 minute lightning talks](http://pysd.io/talk)  
 
 
+* Run multiple types of sims
+** Mu, sigma
+** Historical series
+** Historical year without replacement
+** Historical year with replacement
+** Log normal
+
+
+
 
