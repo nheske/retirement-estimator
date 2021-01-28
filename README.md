@@ -31,6 +31,10 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 * Historical year without replacement e.g. vanguard
 * Historical year with replacement 
 * Log normal 
+Backtest theories
+https://www.magicformulainvesting.com/
+Brinker
+
 
 
 
