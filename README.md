@@ -34,7 +34,7 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 Backtest theories
 * https://www.magicformulainvesting.com/
 * Brinker "Bob Brinker's Market Timing - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/bob-brinker/
-
+* "David Dreman: About Value - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/david-dreman/
 
 
 
