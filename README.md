@@ -36,6 +36,10 @@ Backtest theories
 * Brinker "Bob Brinker's Market Timing - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/bob-brinker/
 * "David Dreman: About Value - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/david-dreman/
 
+* Pythonic "JeffPaine/beautiful_idiomatic_python: Notes from Raymond Hettinger's talk at PyCon US 2013." https://github.com/JeffPaine/beautiful_idiomatic_python
+for i, color in enumerate(colors):
+    print i, '--->', color
+It's fast and beautiful and saves you from tracking the individual indices and incrementing them.
 
-
+Whenever you find yourself manipulating indices [in a collection], you're probably doing it wrong.
 
