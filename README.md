@@ -31,6 +31,7 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 * Historical year without replacement e.g. vanguard
 * Historical year with replacement 
 * Log normal 
+* Non-monte carlo probability calculation
 Backtest theories
 * https://www.magicformulainvesting.com/
 * Brinker "Bob Brinker's Market Timing - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/bob-brinker/
