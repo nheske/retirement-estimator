@@ -33,6 +33,8 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 * Log normal 
 * Non-monte carlo probability calculation
 "Multi-period Returns" https://web.stanford.edu/~wfsharpe/mia/rr/mia_rr3.htm#compounded
+"Can quantiles be calculated for lognormal distributions? - Cross Validated" https://stats.stackexchange.com/questions/159460/can-quantiles-be-calculated-for-lognormal-distributions
+
 
 
 Backtest theories
