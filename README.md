@@ -32,6 +32,9 @@ https://docs.bokeh.org/en/latest/docs/user_guide/quickstart.html#userguide-quick
 * Historical year with replacement 
 * Log normal 
 * Non-monte carlo probability calculation
+"Multi-period Returns" https://web.stanford.edu/~wfsharpe/mia/rr/mia_rr3.htm#compounded
+
+
 Backtest theories
 * https://www.magicformulainvesting.com/
 * Brinker "Bob Brinker's Market Timing - CXO Advisory" https://www.cxoadvisory.com/individual-gurus/bob-brinker/
