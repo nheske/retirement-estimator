@@ -20,6 +20,7 @@
 * [SSA.gov retirement estimator](https://www.ssa.gov/benefits/retirement/estimator.html) | [US Social Security Calculator](https://ssa.tools/) | [source code](https://github.com/Gregable/social-security-tools)
 * [Social Security Strategy Calculator](https://opensocialsecurity.com/) | [open social security source code](https://github.com/MikePiper/open-social-security)
 * [buyupside annualized return calculator](https://www.buyupside.com/calculators/annualizedreturn.htm)
+* https://github.com/PacktPublishing/Scala-Programming-Projects/tree/master/Chapter02/retirement-calculator
 
 #### Forums:
 * [financialindependence subreddit](https://www.reddit.com/r/financialindependence/)
