@@ -180,6 +180,7 @@ def simulate(MONTE_CARLO):
     worst_outcome = np.min(final_outcomes)
     best_outcome = np.max(final_outcomes)
     p100 = np.percentile(final_outcomes, 10, interpolation='nearest')
+    p150 = np.percentile(final_outcomes, 15, interpolation='nearest')
     p250 = np.percentile(final_outcomes, 25, interpolation='nearest')
     median_outcome = np.median(final_outcomes)
     p750 = np.percentile(final_outcomes, 75, interpolation='nearest')
@@ -209,6 +210,7 @@ def simulate(MONTE_CARLO):
     # # strn += "  MAD:       " + _format_currency(astropy.stats.median_absolute_deviation(self.values)) + "\n"
     strn += "Worst outcome:      " + _format_currency(worst_outcome) + "\n"
     strn += "10% outcome:        " + _format_currency(p100) + "\n"
+    strn += "15% outcome:        " + _format_currency(p150) + "\n"
     strn += "25% outcome:        " + _format_currency(p250) + "\n"
     strn += "Median outcome:     " + _format_currency(median_outcome) + "\n"
     strn += "75% outcome:        " + _format_currency(p750) + "\n"
@@ -307,8 +309,10 @@ def simulate(MONTE_CARLO):
     # });
 
 if __name__ == '__main__':
-    input_values = {'years': 30, 'savings': 1000000, 'withdrawalRate': 0.04, 'stocks': 0.5, 'bonds': 0.5, 'cash': 0.0}
-    MONTE_CARLO = MonteCarloSim(input_values, num_trials=100)
+    model_portfolio_ii = {'years': 30, 'savings': 1000000, 'withdrawalRate': 0.04, 'stocks': 1.0, 'bonds': 0.0, 'cash': 0.0}
+    model_portfolio_iii = {'years': 30, 'savings': 1000000, 'withdrawalRate': 0.04, 'stocks': 0.5, 'bonds': 0.5, 'cash': 0.0}
+    model_portfolio_iv = {'years': 30, 'savings': 1000000, 'withdrawalRate': 0.04, 'stocks': 0.4, 'bonds': 0.6, 'cash': 0.0}    
+    MONTE_CARLO = MonteCarloSim(model_portfolio_iii, num_trials=2000)
     simulate(MONTE_CARLO)
     # print("I'm a MonteCarloSim!")
     # MONTE_CARLO = MonteCarloSim()
