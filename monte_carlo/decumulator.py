@@ -44,13 +44,6 @@ class Inputs:
 class MonteCarloSim:
     name = "Monte Carlo Simulator"
     historicalData = []
-    years = 30
-    savings = 1000000
-    withdrawalRate = 0.045
-    stocks = 0.50
-    bonds = 0.30
-    cash = 0.20
-#    inputs = Inputs(input_values)
     inputs = None
     TOTAL_TRIALS = 0
     MAX_YEARS = 0
@@ -59,7 +52,7 @@ class MonteCarloSim:
         self.inputs = Inputs(values)
         self.TOTAL_TRIALS = num_trials
         self.MAX_YEARS = values["years"]
-        with open('../data/historical.json') as file:
+        with open('data/historical.json') as file:
             raw_data_from_json_file = json.load(file)
         historical_list_of_dicts = raw_data_from_json_file["data"]
         historical_data = []
@@ -131,7 +124,10 @@ def simulate(MONTE_CARLO):
             random_year = math.floor(random.random() * len(MONTE_CARLO.historicalData))
             withdrawal *= (1 + MONTE_CARLO.historicalData[random_year].cpi)
             if balance < withdrawal:
-                balance -= withdrawal
+                if(withdrawal > 0):
+                    balance = 0
+                else:
+                    balance -= withdrawal
             else:
                 arr = 1
                 periods += 1
@@ -190,15 +186,15 @@ def simulate(MONTE_CARLO):
     p900 = np.percentile(final_outcomes, 90, interpolation='nearest')
 
     print("Monte Carlo results")
-#    print("size of trials list =      " + str(len(trials)))     #num_years
-#    print("size of trials[i] list:    " + str(len(trials[0])))  #num_trials
-#    print("Num years:                 " + str(len(results[0]))) #num_years
-    print("Num years:                 " + str(MONTE_CARLO.inputs.years))  #num_years
-    print("Num trials:                " + str(MONTE_CARLO.TOTAL_TRIALS))  #num_years
 
     strn = "\n------------------------------------------------------\n"
-    strn += "Duration:           " + str(MONTE_CARLO.inputs.years) + " years\n"
+    strn += "Initial value:      " + _format_currency(MONTE_CARLO.inputs.savings) + "\n"
+    strn += "Withdrawal Rate:    " + str(MONTE_CARLO.inputs.withdrawalRate) + "\n"
     strn += "Num runs:           " + str(MONTE_CARLO.TOTAL_TRIALS) + "\n"
+    strn += "Num Years:          " + str(MONTE_CARLO.inputs.years) + " years\n"
+    strn += "Stocks/Bonds/Cash:  " + str(MONTE_CARLO.inputs.stocks) +"/"+ str(MONTE_CARLO.inputs.bonds) +"/"+ str(MONTE_CARLO.inputs.cash)+ "\n"
+    strn += "Duration:           " + str(MONTE_CARLO.inputs.years) + " years\n"
+
     strn += "Calculation Time:   " + str((time.time() - start)) + "\n"
     strn += "\n"
     strn += "Mean outcome:       " + _format_currency(mean_final_outcome) + "\n"
@@ -311,7 +307,7 @@ def simulate(MONTE_CARLO):
     # });
 
 if __name__ == '__main__':
-    input_values = {'years': 5, 'savings': 1000000, 'withdrawalRate': 0.0, 'stocks': 1.00, 'bonds': 0.0, 'cash': 0.0}
+    input_values = {'years': 30, 'savings': 1000000, 'withdrawalRate': 0.04, 'stocks': 0.5, 'bonds': 0.5, 'cash': 0.0}
     MONTE_CARLO = MonteCarloSim(input_values, num_trials=100)
     simulate(MONTE_CARLO)
     # print("I'm a MonteCarloSim!")
